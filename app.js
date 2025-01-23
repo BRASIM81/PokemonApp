@@ -15,7 +15,7 @@ form.addEventListener('submit', (event) => {
 	}
 })
 const pokemonSearch = () => {
-	fetch('https://pokeapi.co/api/v2/pokemon/' + valueSearch.value)
+	fetch('https://pokeapi.co/api/v2/pokemon/' + valueSearch.value.toLowerCase())
 	.then(res => res.json())
 	.then(data =>{
 		console.log(data);
