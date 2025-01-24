@@ -32,6 +32,7 @@ const pokemonSearch = () => {
 		})
 		moves.innerHTML = move;
 	})
+	valueSearch.value = '';
 }
 
 const initApp = () => {
