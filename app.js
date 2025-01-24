@@ -3,7 +3,7 @@ let form = document.querySelector('form');
 let name = document.getElementById('name');
 let abilities = document.getElementById('ability');
 let moves = document.getElementById('moves');
-let img = document.querySelector('img');
+let img = document.getElementById('gif');
 // var val = valueSearch.value;
 // let url = 'https://pokeapi.co/api/v2/pokemon/'+valueSearch.value;
 
