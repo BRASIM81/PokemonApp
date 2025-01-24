@@ -3,20 +3,32 @@ body
 	padding: 20px
 	margin: 0
 	font-family: "Walter Turncoat", serif
+	background-image: url('../pm-bg.jpg')
+	background-attachment: fixed
+	background-size: cover
+	backdrop-filter: blur(3px)
+	backdrop-filter: brightness(170%)
+	backdrop-filter: contrast(60%)
 form
-	width: 25vw
+	width: 30vw
 	margin: 10px auto
 	display: flex
 	justify-content: space-between
 	outline: 1px solid #0006 
 	border-radius: 10px
+	background-color: transparent
+	@media ( max-width: 567px )
+		width: 85vw
+		
 	input
 		font-size: 1.5rem
 		width: 100%
 		border: none
 		padding: 5px 10px
-		text-transform: lowercase
+		text-transform: lowercase 
+		background: #fff3 
 	button
+		background: #fff3
 		border: none
 		i
 			font-size: 1.5rem
