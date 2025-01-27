@@ -1,6 +1,7 @@
 let valueSearch = document.getElementById('searchValue');
 let form = document.querySelector('form');
 let name = document.getElementById('name');
+let height = document.getElementById('height');
 let abilities = document.getElementById('ability');
 let moves = document.getElementById('moves');
 let img = document.getElementById('gif');
@@ -21,6 +22,7 @@ const pokemonSearch = () => {
 		console.log(data);
 		img.src = data.sprites.front_shiny;
 		name.innerText = data.name;
+		height.innerText = 'Height: '+data.height+'0cm. Weight: '+data.weight+'00g';
 		let ability = '';
 		let move = '';
 		data.abilities.forEach(a =>{
