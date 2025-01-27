@@ -20,9 +20,10 @@ const pokemonSearch = () => {
 	.then(res => res.json())
 	.then(data =>{
 		console.log(data);
+		let weight = data.weight / 10;
 		img.src = data.sprites.front_shiny;
 		name.innerText = data.name;
-		height.innerText = 'Height: '+data.height+'0cm. Weight: '+data.weight+'00g';
+		height.innerText = 'Height: '+data.height+'0cm. Weight: '+weight+'Kg';
 		let ability = '';
 		let move = '';
 		data.abilities.forEach(a =>{
